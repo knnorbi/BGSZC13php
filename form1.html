@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Első formom</title>
+</head>
+<body>
+    <form action="form.php" method="post">
+        <label for="nev">Név:</label>
+        <input type="text" name="nev" id="nev" placeholder="Név">
+        <input type="password" name="jelszo" autofocus>
+        <br>
+        <p>Szereted-e ezeket?</p>
+        <input type="checkbox" name="kave" id="kave" checked>
+        <label for="kave">Kávé</label>
+        <input type="checkbox" name="hus" id="hus" value="ragadozo">
+        <label for="hus">Hús</label>
+        <p>Mi a nemed?</p>
+        <input type="radio" id="fiu" name="nem" value="fiu">
+        <label for="fiu">Fiú</label>
+        <input type="radio" id="lany" name="nem" value="lany" checked>
+        <label for="lany">Lány</label>
+        <p>Mi a kedvenc autód?</p>
+        <select name="kauto">
+            <optgroup label="Swedish Cars">
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+            </optgroup>
+            <optgroup label="German Cars">
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+            </optgroup>
+        </select> 
+        
+        <input type="submit">
+    </form> 
+</body>
+</html>
